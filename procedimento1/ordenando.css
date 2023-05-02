@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --cor-fundo: #ffc107;
+    --fonte-principal: 'Source Sans Pro', sans-serif;
+    --cor-texto-principal: #371b01;
+    --cor-borda: #3B8686;
+    --cor-botao-hover: #3B8686;
+}
+
+body {
+    margin: 20px;
+    padding: 10px;
+    background: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-borda);
+    padding: 50px;
+}
+h1 {
+    color: var(--cor-texto-principal);
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--fonte-principal);
+}
+label {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+}
+input {
+    border-radius: 5px;
+    background: var(--cor-fundo);
+    border: 2px solid var(--cor-borda);
+    width: 150px;
+    height: 33px;
+    color: var(--cor-texto-principal);
+    display: inline-block;
+    vertical-align: middle;
+}
+.botao {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    border: 2px solid var(--cor-borda);
+    font-family: var(--fonte-principal);
+    display: inline-block;
+    margin: 5px auto;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.botao:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-fundo);
+}
+.botao-voltar {
+    display: block;
+    margin: 20px auto 0;
+}
+#botoes-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#botoes-container button {
+    margin: 0 10px;
+}
+option {
+    background: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-borda);
+    font-family: var(--fonte-principal);
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select {
+    height: 30px;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: var(--fonte-principal);
+}

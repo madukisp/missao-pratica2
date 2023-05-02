@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --fonte-principal: 'Source Sans Pro', sans-serif;
+    --cor-fundo: #ffc107;
+    --cor-fundo-header: #E8DDCB;
+    --cor-texto-principal: #371b01;
+    --cor-subtitulo: #666666;
+    --cor-botão: #3B8686;
+    --cor-botão-texto: #ffffff;
+    --cor-botao-hover: #036564;
+}
+body {
+    margin: 20px;
+    padding: 10px;
+    background: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-size: 28px;
+}
+.botao-voltar {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Estilo Início */
+
+#header {
+    padding: 20px;
+    background-color: var(--cor-fundo-header);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+#header p {
+    color: var(--cor-subtitulo);
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+.botao-inicio {
+    background-color: var(--cor-botão);
+    color: var(--cor-botão-texto);
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;    
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.botao-inicio:hover {
+    background-color: var(--cor-botao-hover);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+/* Estilo Procedimento1 - Ordenando */
+
+#botao-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    background-color: var(--cor-fundo-header);
+    border: 2px solid var(--cor-borda);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding: 50px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+}
+input {
+    background: var(--cor-botão);
+    border: 2px solid var(--cor-borda);
+    color: var(--cor-botão-texto);
+    border-radius: 5px;
+    width: 150px;
+    height: 33px;    
+    display: inline-block;
+    vertical-align: middle;
+}
+.botao {
+    background-color: var(--cor-botão);
+    color: var(--cor-botão-texto);
+    border: 2px solid var(--cor-borda);
+    display: inline-block;
+    margin: 5px auto;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.botao:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-fundo);
+}
+#botoes-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#botoes-container button {
+    margin: 0 10px;
+}
+option {
+    background: var(--cor-fundo-header);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select {
+    font-size: 15px;
+    height: 30px;  
+}
+
+/* Estilos Procedimento2 - Receitas */
+
+.card-custom {
+    width: 250px;    
+}
+.card-img-custom {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Estilos Procedimento3 - Usários Teste */
+
