@@ -26,10 +26,6 @@ h1 {
     text-align: center;
     font-size: 28px;
 }
-.botao-voltar {
-    display: block;
-    margin: 20px auto 0;
-}
 
 /* Estilo Início */
 
@@ -150,6 +146,10 @@ option {
 select {
     font-size: 15px;
     height: 30px;  
+}
+.botao-voltar {
+    display: block;
+    margin: 20px auto 0;
 }
 
 /* Estilos Procedimento2 - Receitas */
