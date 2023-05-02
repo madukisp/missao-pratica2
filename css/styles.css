@@ -71,6 +71,10 @@ h1 {
     align-items: center;
     min-height: calc(100vh - 80px);
 }
+.botao-voltar {
+    display: block;
+    margin: 20px auto 0;
+}
 
 /* Estilo Procedimento1 - Ordenando */
 
@@ -146,10 +150,6 @@ option {
 select {
     font-size: 15px;
     height: 30px;  
-}
-.botao-voltar {
-    display: block;
-    margin: 20px auto 0;
 }
 
 /* Estilos Procedimento2 - Receitas */
